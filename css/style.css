@@ -17,9 +17,25 @@ img {
 a {
     text-decoration: none;
 }
-html{scroll-behavior: smooth;}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background: #000 url(../images/PVtR.gif);
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 9999999999;
+    
 }
 
 .container {
@@ -30,7 +46,11 @@ body {
 #Header {
     display: flex;
     justify-content: space-between;
-    align-items: center;position: sticky !important;z-index: 99999999;top:0;background: #fff;
+    align-items: center;
+    position: sticky !important;
+    z-index: 99999999;
+    top: 0;
+    background: #fff;
 }
 
 #navbar {
@@ -49,7 +69,11 @@ body {
     display: inline-block;
     position: relative;
 }
-#navbar li .active::after{opacity: 1;}
+
+#navbar li .active::after {
+    opacity: 1;
+}
+
 #navbar li a::after {
     transition: .3s ease-in-out;
     opacity: 0;
@@ -118,9 +142,14 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
-    margin: 20px 0;transition: all ease-in-out 0.3s;
+    margin: 20px 0;
+    transition: all ease-in-out 0.3s;
 }
-.about_con a:hover{background: #000;}
+
+.about_con a:hover {
+    background: #000;
+}
+
 #about ul {
     position: absolute;
     bottom: 0;
@@ -312,15 +341,49 @@ body {
     background: #3700ff;
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff;border-radius: 8px;
+    color: #fff;
+    border-radius: 8px;
 }
-#Contact_part form button:hover{background: #000;transition:all ease-in-out 0.3s ;}
-#footer{padding: 20px 0;background: #000;text-align: center;}
-#footer h3{font-weight: bold;color: #fff;text-transform: uppercase;font-size: 25px;}
-#footer ul{display: flex;justify-content: center;align-items: center;margin-top: 20px;}
-#footer ul li{margin: 0 20px;}
-#footer ul li a{font-size: 20px;color: #fff;}
-#footer p{color: #fff;margin-top: 20px;}
+
+#Contact_part form button:hover {
+    background: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+#footer {
+    padding: 20px 0;
+    background: #000;
+    text-align: center;
+}
+
+#footer h3 {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer ul li {
+    margin: 0 20px;
+}
+
+#footer ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+
+#footer p {
+    color: #fff;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 499px) {
     .work_img {
         width: 100%;
@@ -422,8 +485,9 @@ body {
     .skill_img {
         display: none;
     }
+
     #Contact_part form {
         width: 100%;
-      
+
     }
 }

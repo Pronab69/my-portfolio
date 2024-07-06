@@ -36,7 +36,7 @@ scrollContainer.addEventListener('mouseover', () => {
 scrollContainer.addEventListener('mouseout', () => {
     clearInterval(scrollInterval);
 });
-AOS.init();
+
 
 
 gsap.from("#navbar li",
@@ -59,4 +59,9 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector('#main'),
   smooth: true
 });
+var preloader = document.getElementById("preloader");
+function loader()
+{
+  preloader.style.display = "none";
+}
 
