@@ -26,7 +26,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.preloader {
+#preloader {
     width: 100%;
     height: 100vh;
     background: #000 url(../images/PVtR.gif);
