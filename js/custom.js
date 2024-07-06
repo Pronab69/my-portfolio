@@ -46,7 +46,7 @@ gsap.from("#navbar li",
     duration:1,
    
   }
-)
+);
 gsap.from("#Header a",
   {
     y:-100,
@@ -54,4 +54,9 @@ gsap.from("#Header a",
     duration:1,
    
   }
-)
+);
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true
+});
+
