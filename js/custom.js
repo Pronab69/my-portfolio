@@ -59,9 +59,3 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector('#main'),
   smooth: true
 });
-var preloader = document.getElementById("preloader");
-function loader()
-{
-  preloader.style.display = "none";
-}
-
